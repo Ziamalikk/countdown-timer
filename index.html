@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown timer</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1>
+        <span class="countdown-text">COUNTDOWN</span> 
+        <span class="timer-text">TIMER</span>
+    </h1>
+    
+    <table>
+        <thead>
+            <tr><th>Enter date and time</th></tr></thead>
+<tbody><tr><td><input type="datetime-local" id="date" name="date">
+</td></tr>       </tbody> 
+    </table>
+<button type="button" id="start">start</button>
+<button type="button" id="stop">stop</button>
+
+    <div class="countdown">
+        <div >
+            <p class="heading">Day</p>
+            <div class="time" id="day">0</div>
+        </div>
+        <div>
+            <p class="heading">Hour</p>
+            <div class="time" id="hour">0</div>
+        </div> <div>
+            <p class="heading">Minute</p>
+            <div class="time" id="minute">0</div>
+        </div> <div>
+            <p class="heading">Seconds</p>
+            <div class="time" id="second">0</div>
+        </div> 
+            
+        </div>
+        <h2 id="heading2">times up!</h2>
+            <audio id="alarm-sound" src="audio/time-stop-80521.mp3" preload="auto"></audio>
+  
+
+</body>
+<script src="script.js"></script>
+
+</div>
+</html>

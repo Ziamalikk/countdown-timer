@@ -1,0 +1,124 @@
+
+body {
+   text-align: center  ;
+    height: 100vh;
+    background: linear-gradient(to right, #191818, #171616);
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    margin: 0;
+}
+h1 {
+    margin-bottom: 80px;
+    margin-top: 60px;
+    font-size: 2.5em;
+}
+table{
+    margin: auto;
+}
+th{
+    font-size: 1.5em;
+}
+input {
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+input:hover{
+   background-color: rgba(255, 255, 255, 0.778)
+}
+button {
+    padding: 10px 20px;
+    margin: 9px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color:black;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.countdown{
+    display: flex;
+    justify-content: center;
+}
+.time {
+    font-size: 6em;
+    background-color: black;
+    width: 1.5em;
+    margin: 0px 14px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgb(60, 54, 54);
+}
+.heading{
+    font-size: 2em;
+    font-weight: bold;
+}
+h2{
+    display: none;
+}
+.countdown-text{
+    color: rgb(235, 228, 10);
+}
+#heading2{
+    font-size: 40px;  /* Bigger text */
+    font-weight: bold;
+    color: rgb(224, 210, 210);  /* Eye-catching color */
+    text-transform: uppercase;
+    text-shadow: 2px 2px 10px rgba(140, 124, 124, 0.8); /* Glowing effect */
+    display: none; /* Hidden by default */
+    animation: blink 1s infinite alternate; /* Blinking effect */
+}
+button:hover{
+    background-color: rgb(40, 38, 38);
+    color: white;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .heading {
+        font-size: 1.5rem;
+        margin-left: 0; /* Remove unnecessary margin */
+    }
+
+    .time {
+        width: 2.5rem; /* Give it a proper width */
+        height: 2.5rem; /* Ensure it's square */
+        font-size: 2rem; /* Adjust font size */
+        margin: 5px auto; /* Centering the timer */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .countdown {
+        flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+        gap: 10px; /* Space between elements */
+    }
+
+    .countdown div {
+        width: auto;
+        max-width: 80px;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    button {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    th, td {
+        font-size: 1rem;
+    }
+}
