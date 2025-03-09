@@ -16,10 +16,6 @@ A simple and interactive **Countdown Timer** that allows users to set a date and
 - **CSS3** - For styling and layout.
 - **JavaScript** - For countdown logic and interactivity.
 
-## 📷 Screenshot
-
-![Countdown Timer Screenshot](screenshot.png)
-
 ## 📂 Project Structure
 
 ```
@@ -49,10 +45,6 @@ Countdown-Timer/
 - 🎨 Dark mode support.
 - 🔔 Custom alarm sound selection.
 - 🌎 Multi-language support.
-
-## 💡 Contributing
-
-Feel free to fork this repository and submit pull requests. Contributions are always welcome! 😊
 
 ## 📞 Contact
 
